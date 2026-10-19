@@ -17,7 +17,7 @@ DATA_FILE = Path(__file__).parent / "ferry_analysis_2015_2025.csv"
 
 @st.cache_data
 def load_data(file_path):
-    data = pd.read_csv(file_path, parse_dates=["Timestamp"])
+    data = pd.read_csv(file_path, parse_dates=["Timestamp"], compression="gzip")
     return data.sort_values("Timestamp")
 
 try:
