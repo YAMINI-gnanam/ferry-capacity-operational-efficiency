@@ -13,7 +13,7 @@ st.title("⛴️ Ferry Capacity Utilization & Operational Efficiency")
 st.caption("Toronto Island Ferry Ticket Activity | 2015–2025")
 
 # Load the analyzed dataset
-DATA_FILE = Path(__file__).parent / "ferry_analysis_2015_2025.csv"
+DATA_FILE = Path(__file__).parent / "ferry_analysis_2015_2025.csv.gz"
 
 @st.cache_data
 def load_data(file_path):
